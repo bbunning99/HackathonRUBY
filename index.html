@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Ruby Shop</title>
+</head>
+<body>
+  <header>
+    <div class="header-left"><a href="#" class="logo">&nbsp;&nbsp;Ruby Shop</a></div>
+    <div class="search-bar">&nbsp;&nbsp;<input type="text" placeholder="Ruby Shop 검색"></div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="/">홈</a></li>
+          <li><a href="#">상품 목록</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a href="#">마이페이지</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="tag"><a>블랙프라이데이 / 특가 세일 / 가장 맛있는 콘 옥수수 / 진짜 티를 즐기다 / 어흥 호랑이는 어흥이다 </a></section>
+  
+  <main>
+    <div class="banner">
+      <h1> Black Friday!!!!</h1>
+      <h1 class="section-title">마지막 초특가!!</h1>
+    </div>
+  </main>
+
+  <section class="product-list">
+    <div class="product">
+      <img src="img/product1.jpg" alt="Product 1">
+      <h2>초대형 울트라 TV</h2>
+      <p class="product-quantity">수량 : 2</p> <!-- 클래스 추가 -->
+      <p>명품 티비 영화관이 따로 없네! 지금이 기회입니다~</p>
+      <button class="buy-button" onclick="redirectToPayState()">구매하기</button>
+    </div>
+    <div class="product">
+      <img src="img/product2.jpg" alt="Product 2">
+      <h2>아령</h2>
+      <p class="product-quantity">수량 : 556</p> <!-- 클래스 추가 -->
+      <p>철이 부족할 땐 가장 최고입니다. 강력추천!</p>
+      <button class="buy-button" onclick="redirectToPayState2()">구매하기</button>
+    </div>
+    <div class="product">
+      <img src="img/banner2.jpg" alt="Product 3">
+      <h2>상콤달콤한 코코넛 워터</h2>
+      <p class="product-quantity">수량 : 599</p> <!-- 클래스 추가 -->
+      <p>정말로 신선하고 맛좋은 코코넛 오일이 함유된 물입니다.</p>
+      <button class="buy-button" onclick="redirectToPayState2()">구매하기</button>
+    </div>
+    <!-- 다른 상품들도 추가 -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 쇼핑 사이트. All rights reserved.</p>
+  </footer>
+  <script>
+    function redirectToPayState() {
+      window.location.href = "pay-state.html";
+    }
+    function redirectToPayState2() {
+      window.location.href = "pay_state_pass.html";
+    }
+  </script>
+</body>
+</html>

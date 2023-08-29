@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>수량 부족!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <body>
+      <header>
+        <div class="header-left"><a href="#" class="logo">&nbsp;&nbsp;Ruby Shop</a></div>
+        <div class="search-bar">&nbsp;&nbsp;<input type="text" placeholder="Ruby Shop 검색"></div>
+        <div class="header-right">
+          <nav>
+            <ul>
+              <li><a href="/">홈</a></li>
+              <li><a href="#">상품 목록</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">마이페이지</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="purchase-box">
+        <p>구매하시겠습니까?</p>
+        <button id="purchaseButton">yes</button>
+      </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="modalContent">
+          <h1>수량이 부족해요!</h1>
+          <p>안 내면 진다 가위바위 보!</p>
+          <button id="rock">✊</button>
+          <button id="paper">🖐</button>
+          <button id="scissors">✌</button>
+          <p id="result"></p>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <p>&copy; 2023 쇼핑 사이트. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

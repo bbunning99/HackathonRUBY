@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* 리셋 스타일 */
+body,
+h2,
+h3,
+ul,
+li,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  color: #a10707;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.search-bar {
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  padding: 20px 0; /* 상하 여백을 추가 */
+}
+.section-title {
+  color: red;
+}
+.tag{
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+.product {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+.product-quantity {
+  font-size: 14px;
+  color: #666; /* 원하는 색상으로 조절 */
+  margin-top: 5px; /* 위쪽 여백 조절 */
+}
+.product img {
+    width: 300px;
+    height: 150px;   
+}
+
+.buy-button {
+  background-color: #f44336;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #d32f2f;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main{
+  text-align: center;
+}
+
+.purchase-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+}
