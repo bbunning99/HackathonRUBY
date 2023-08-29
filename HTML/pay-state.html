@@ -4,7 +4,6 @@
     <title>수량 부족!</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* 스타일링은 필요한 경우 자유롭게 수정 가능합니다. */
       .modal {
         display: none;
         position: fixed;
@@ -38,7 +37,7 @@
       <h1>쇼핑 사이트</h1>
       <nav>
         <ul>
-          <li><a href="http://172.16.75.114:3000/HTML/">홈</a></li>
+          <li><a href="/">홈</a></li>
           <li><a href="#">상품 목록</a></li>
           <li><a href="#">장바구니</a></li>
           <li><a href="#">마이페이지</a></li>
@@ -97,7 +96,7 @@
             game_ing = true;
             setTimeout(function () {
               game_ing = false;
-              window.location.href = "http://172.16.75.114:3000/HTML/";
+              window.location.href = "/";
             }, 3000);
           } else if (
             (userChoice === "✌" && computer === "🖐") ||
@@ -108,15 +107,14 @@
             game_ing = true;
             setTimeout(function () {
               game_ing = false;
-              window.location.href =
-                "http://172.16.75.114:3000/HTML/payment.html";
+              window.location.href = "payment.html";
             }, 3000);
           } else {
             result = "졌습니다! 혹시모르니 재고 다시한번 확인하세요!";
             game_ing = true;
             setTimeout(function () {
               game_ing = false;
-              window.location.href = "http://172.16.75.114:3000/HTML/";
+              window.location.href = "/";
             }, 3000);
           }
 
