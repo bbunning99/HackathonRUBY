@@ -38,7 +38,7 @@
       <h1>쇼핑 사이트</h1>
       <nav>
         <ul>
-          <li><a href="index.html">홈</a></li>
+          <li><a href="http://172.16.75.114:3000/HTML/">홈</a></li>
           <li><a href="#">상품 목록</a></li>
           <li><a href="#">장바구니</a></li>
           <li><a href="#">마이페이지</a></li>
@@ -97,7 +97,7 @@
             game_ing = true;
             setTimeout(function () {
               game_ing = false;
-              window.location.href = "index.html";
+              window.location.href = "http://172.16.75.114:3000/HTML/";
             }, 3000);
           } else if (
             (userChoice === "✌" && computer === "🖐") ||
@@ -108,14 +108,15 @@
             game_ing = true;
             setTimeout(function () {
               game_ing = false;
-              window.location.href = "payment.html";
+              window.location.href =
+                "http://172.16.75.114:3000/HTML/payment.html";
             }, 3000);
           } else {
             result = "졌습니다! 혹시모르니 재고 다시한번 확인하세요!";
             game_ing = true;
             setTimeout(function () {
               game_ing = false;
-              window.location.href = "index.html";
+              window.location.href = "http://172.16.75.114:3000/HTML/";
             }, 3000);
           }
 
